@@ -1,0 +1,78 @@
+.root {
+  min-height: 100vh;
+
+  :global {
+    body {
+      font-family: Tenor Sans, sans-serif;
+    }
+
+    .footer-container {
+      font-family: 'Tenor Sans', sans-serif;
+      color: var(--primary-headings);
+    }
+
+    .ant-alert-info {
+      background-color: #ebf7ff;
+      border: 1px solid #003c66;
+
+      .ant-alert-icon {
+        color: #003c66;
+      }
+
+      .ant-alert-message {
+        color: #003c66;
+      }
+    }
+
+    #components-layout .trigger {
+      padding: 0 24px;
+      font-size: 18px;
+      line-height: 64px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    #components-layout .trigger:hover {
+      color: #1890ff;
+    }
+
+    .ant-layout {
+      background: var(--background-color) !important;
+    }
+
+    #components-layout .logo {
+      margin: 16px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .site-layout .site-layout-background {
+      background: #FFFFFF;
+    }
+
+    .site-layout .site-layout-menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      z-index: 3;
+      background: transparent !important;
+    }
+
+    .site-layout .site-layout-background-content {
+      background: none;
+    }
+
+
+  }
+}
+
+
+.dropdownMenu {
+  :global {
+    .ant-menu-root.ant-menu-vertical, .ant-menu-root.ant-menu-vertical-left, .ant-menu-root.ant-menu-vertical-right, .ant-menu-root.ant-menu-inline {
+      border-radius: 8px;
+      color: var(--primary-headings);
+      background-color: var(--primary-background);
+    }
+  }
+}

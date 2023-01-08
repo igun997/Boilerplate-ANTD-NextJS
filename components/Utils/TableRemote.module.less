@@ -1,0 +1,73 @@
+.root {
+  width: 100%;
+
+  :global {
+    .ant-table-thead > tr > th {
+      background: #f6f6f6;
+    }
+
+    .action-bottom {
+      line-height: 30px;
+    }
+
+    .table-row-light {
+      background-color: #ffffff;
+    }
+
+    .table-row-dark {
+      background-color: #f6f6f6;
+    }
+
+    .select-size {
+      .ant-select-selector {
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.actions {
+  justify-content: flex-end;
+}
+
+.customSwitch {
+  :global {
+    .ant-switch-handle {
+      width: 18px !important;
+      height: 18px !important;
+      top: -1px;
+      left: 0;
+
+      &::before {
+        background-color: #1f262c;
+      }
+    }
+
+    .ant-switch-checked .ant-switch-handle {
+      &::before {
+        background-color: #268e6c;
+      }
+    }
+
+    .ant-switch-checked {
+      background-color: #f0f7f5;
+      box-shadow: none;
+    }
+
+    .ant-switch-checked:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.formitem {
+  :global {
+    .ant-form-item-label {
+      width: 100%;
+
+      label {
+        width: 95%;
+      }
+    }
+  }
+}
